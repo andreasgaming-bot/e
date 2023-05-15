@@ -108,6 +108,3 @@ function version-av {
 
 # Clear History powershell:
   [Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory();
-# Clear run powershell:
-  Remove-Item HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
-exit;
